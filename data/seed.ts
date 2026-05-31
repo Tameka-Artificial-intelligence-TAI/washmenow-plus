@@ -1,43 +1,4 @@
-export const pilotCarwash = {
-  id: "out-of-nature-carwash",
-  name: "Out of Nature Carwash",
-  tagline: "Verified pilot carwash in Windhoek — clean cars, fresh shine, local service.",
-  status: "Verified Pilot",
-  address: "Erf 2255 Stockholm Street, Windhoek",
-  phone: "081 336 9016",
-  mapsUrl: "https://maps.app.goo.gl/Bj4SVA4sEc9PSLW79",
-  city: "Windhoek",
-  region: "Khomas",
-  operatingHours: "Open today • Confirm with owner",
-  currentQueue: 3,
-  availableBays: 1,
-  estimatedWaitMinutes: 35,
-  lastQueueUpdated: "Updated 7 minutes ago",
-  pilotOffer: "2-month free WashMeNow+ pilot for verified carwash partners.",
-  paymentMethods: ["Cash", "POS", "Digital payments coming soon"],
-  highlights: [
-    "Verified pilot profile",
-    "Live queue visibility",
-    "Booking request demo",
-    "POS and payment tracking roadmap",
-  ],
-  gallery: [
-    { title: "Fresh front shine", caption: "Demo image for profile hero and promotion.", src: "/out-of-nature/carwash-hero.webp" },
-    { title: "On-site wash experience", caption: "Shows the carwash environment and service in progress.", src: "/out-of-nature/carwash-live-wash.webp" },
-    { title: "Side profile finish", caption: "Clean exterior result for customer gallery previews.", src: "/out-of-nature/carwash-side.webp" },
-    { title: "Wheel detail", caption: "Close-up detail shot for premium shine positioning.", src: "/out-of-nature/carwash-wheel-detail.webp" },
-    { title: "Service price board", caption: "Pilot service pricing captured from the carwash board.", src: "/out-of-nature/service-price-board.webp" },
-  ],
-  sampleBookings: [
-    { customer: "Guest • WMN-1042", service: "SUV Denim Wash", time: "Today, 15:30", status: "Pending confirmation", amount: "N$90" },
-    { customer: "Guest • WMN-1043", service: "Sedan Outside + Inside", time: "Today, 16:00", status: "Confirmed", amount: "N$70" },
-  ],
-  services: [
-    { category: "SUV", prices: { "Denim Wash": 90, Outside: 50, Inside: 40, Engine: 30, "Under Wash": 30 } },
-    { category: "Single Cab", prices: { "Denim Wash": 80, Outside: 50, Inside: 30, Engine: 30, "Under Wash": 30 } },
-    { category: "Double Cab", prices: { "Denim Wash": 90, Outside: 50, Inside: 40, Engine: 50, "Under Wash": 30 } },
-    { category: "Sedan", prices: { "Denim Wash": 70, Outside: 40, Inside: 30, Engine: 30, "Under Wash": 30 } },
-    { category: "Mini Truck", prices: { "Denim Wash": 100, Outside: 60, Inside: 30, Engine: 30, "Under Wash": 30 } },
-    { category: "Extras", prices: { Mats: 150, "Car Seats": 350 } },
-  ],
-};
+import { carWashes, getPrimaryCarwash } from "./carwashes";
+
+export const pilotCarwash = getPrimaryCarwash();
+export { carWashes };
