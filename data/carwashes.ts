@@ -2,6 +2,7 @@ export type ServiceItem = {
   name: string;
   price: string;
   note?: string;
+  imageUrl?: string;
 };
 
 export type ServiceCategory = {
@@ -101,12 +102,101 @@ export const carWashes: Carwash[] = [
     ],
     menus: [
       {
-        category: "Kitchen / Bar / Add-ons",
-        description: "Placeholder for future owner-managed menu, stock and POS items.",
+        category: "Namibian Beverages",
+        description:
+          "Dummy menu data for the owner demo. Final products, prices and alcohol licensing must be confirmed by the carwash owner.",
         items: [
-          { name: "Soft drinks", price: "Coming soon", note: "Owner to confirm" },
-          { name: "Water", price: "Coming soon", note: "Owner to confirm" },
-          { name: "Mobile chef / event activation", price: "On request", note: "For special events" },
+          {
+            name: "Local Lager Beer",
+            price: "N$25",
+            note: "18+ only • Placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Draught Beer",
+            price: "N$30",
+            note: "18+ only • Placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Soft Drink",
+            price: "N$18",
+            note: "Coke/Fanta/Sprite-style placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Bottled Water",
+            price: "N$12",
+            note: "Still water placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Fruit Juice",
+            price: "N$20",
+            note: "Orange/apple/mixed fruit placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Whisky / Brandy Tot",
+            price: "N$25",
+            note: "18+ only • Placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=600&q=80",
+          },
+        ],
+      },
+      {
+        category: "Home-Cooked Meals",
+        description:
+          "Dummy food menu for carwash waiting-area customers and future POS ordering.",
+        items: [
+          {
+            name: "Kapana Plate",
+            price: "N$45",
+            note: "Meat, salsa and pap-style placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Chicken Plate",
+            price: "N$55",
+            note: "Chicken, pap/rice and salad placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Beef Stew & Pap",
+            price: "N$60",
+            note: "Home-cooked meal placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Vetkoek / Fat Cakes",
+            price: "N$10",
+            note: "Per piece placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Chips / Fries",
+            price: "N$25",
+            note: "Snack item placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80",
+          },
+          {
+            name: "Mobile Chef Event Package",
+            price: "N$1,500",
+            note: "For special carwash events • Placeholder",
+            imageUrl:
+              "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80",
+          },
         ],
       },
     ],

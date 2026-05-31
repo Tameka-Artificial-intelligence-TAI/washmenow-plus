@@ -287,13 +287,23 @@ function PriceItem({
     name: string;
     price: string;
     note?: string;
+    imageUrl?: string;
   };
 }) {
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-sm">
-      <p className="text-sm text-slate-600">{item.name}</p>
-      <p className="mt-1 text-lg font-black text-slate-950">{item.price}</p>
-      {item.note && <p className="mt-1 text-xs text-slate-500">{item.note}</p>}
+    <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-100">
+      {item.imageUrl && (
+        <div
+          className="h-32 bg-cover bg-center"
+          style={{ backgroundImage: `url(${item.imageUrl})` }}
+        />
+      )}
+
+      <div className="p-4">
+        <p className="text-sm font-semibold text-slate-700">{item.name}</p>
+        <p className="mt-1 text-lg font-black text-slate-950">{item.price}</p>
+        {item.note && <p className="mt-1 text-xs text-slate-500">{item.note}</p>}
+      </div>
     </div>
   );
 }
